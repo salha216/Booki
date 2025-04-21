@@ -13,6 +13,37 @@
     color: var(--main-color);
 }
 
+img.logo {
+    padding: 30px 50px 30px 50px;
+    width: 61.09px;
+    height: 19px;
+}
+
+nav {
+   max-width: 1440px;
+   height: 79px;
+   display: flex; 
+   justify-content: space-between;
+   border-bottom: solid #FFFFFF; 
+}
+
+ul.navigation {
+    display: flex;
+    list-style: none;
+    max-width: 344px;
+    height: 35px;
+    gap: 68px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: 400 ;
+}
+
+a:hover {
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
 body {
     display: flex;
     justify-content: center;
