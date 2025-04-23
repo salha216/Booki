@@ -14,7 +14,8 @@
 }
 
 img.logo {
-    padding: 30px 50px 30px 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 61.09px;
     height: 19px;
 }
@@ -29,6 +30,7 @@ nav {
 
 ul.navigation {
     display: flex;
+    align-items: flex-end;
     list-style: none;
     max-width: 344px;
     height: 35px;
@@ -37,11 +39,75 @@ ul.navigation {
     padding-right: 50px;
     font-size: 16px;
     font-weight: 400 ;
+    margin: unset;
 }
 
 a:hover {
     color: #0065FC;
     border-top: solid #0065FC;
+}
+
+.recherches-et-filtres {
+    width: 1340px;
+    height: 281px;
+}
+
+.recherches {
+    height: 53px;
+}
+
+.recherches h1 {
+    height: 26px;
+    font-size : 22px ;
+    margin: unset;
+}
+
+.recherches p {
+    height: 16px;
+    margin: unset;
+}
+
+.localisation {
+    width: 377px;
+    height: 49px;
+    display: flex;
+    
+}
+
+i.fa-solid.fa-location-dot {
+    height: 49px;
+    width: 50px;
+    color: #000000;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    font-weight: 700;
+    width: 195px;
+    border: 1px solid #F2F2F2 ;
+}
+
+::placeholder {
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.boutton-envoyer {
+    width: 132px;
+    height: 49px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 body {
