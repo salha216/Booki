@@ -21,16 +21,14 @@ img.logo {
 }
 
 nav {
-   max-width: 1440px;
-   height: 79px;
-   display: flex; 
-   justify-content: space-between;
-   border-bottom: solid #FFFFFF; 
+    height: 79px;
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: solid #FFFFFF; 
 }
 
 ul.navigation {
     display: flex;
-    align-items: flex-end;
     list-style: none;
     max-width: 344px;
     height: 35px;
@@ -42,35 +40,41 @@ ul.navigation {
     margin: unset;
 }
 
-a:hover {
+li {
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+}
+
+li:hover {
     color: #0065FC;
     border-top: solid #0065FC;
 }
 
 .recherches-et-filtres {
-    width: 1340px;
     height: 281px;
     padding-bottom: 35px;
 }
 
-.recherches {
-    height: 53px;
-    padding-bottom: 35px;
-}
-
-.recherches h1 {
+h1 {
     height: 26px;
     font-size : 22px ;
     margin: unset;
 }
-
-.recherches p {
+.recherches-et-filtres p {
     height: 16px;
     margin: unset;
+    padding-bottom: 35px;
 }
 
-i.fa-solid.fa-location-dot {
+.localisation {
+    width: 377px;
     height: 49px;
+    display: flex;
+    padding-bottom: 35px ;
+}
+
+i.fa-solid.fa-location-dot {    
     width: 50px;
     color: #000000;
     background-color: #F2F2F2;
@@ -81,16 +85,8 @@ i.fa-solid.fa-location-dot {
     justify-content: center;
 }
 
-.localisation {
-    width: 377px;
-    height: 49px;
-    display: flex;
-    padding-bottom: 35px ;
-}
-
 .boutton-envoyer {
     width: 132px;
-    height: 49px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #0065FC;
@@ -120,11 +116,11 @@ i.fa-solid.fa-location-dot {
     padding-bottom: 35px;
 }
 
-.titre-filtre {
+.filtres h2 {
     font-size : 18px ;
 }
 
-.économique {
+.economique {
     width: 173px;
     display: flex;
     align-items: center;
@@ -132,6 +128,8 @@ i.fa-solid.fa-location-dot {
     gap: 10px;
     border-radius: 25px ;
     border: 2px solid #D9D9D9;
+    font-size: 17px;
+    background-color: #FFFFFF;
 }
 
 .familial {
@@ -142,6 +140,8 @@ i.fa-solid.fa-location-dot {
     gap: 10px;
     border-radius: 25px ;
     border: 2px solid #D9D9D9;
+    font-size: 17px;
+    background-color: #FFFFFF;
 }
 
 .romantique {
@@ -152,6 +152,8 @@ i.fa-solid.fa-location-dot {
     gap: 10px;
     border-radius: 25px ;
     border: 2px solid #D9D9D9;
+    font-size: 17px;
+    background-color: #FFFFFF;
 }
 
 .pepites {
@@ -162,37 +164,27 @@ i.fa-solid.fa-location-dot {
     gap: 10px;
     border-radius: 25px ;
     border: 2px solid #D9D9D9;
+    font-size: 17px;
+    background-color: #FFFFFF;
 }
 
-i.fa-thin-fa-circle-info {
-    border: 1px solid #D9D9D9 ;
-
-}
 .infos {
     display: flex;
-    align-items: center;
     height: 24px;
     gap : 10px;
 }
 
 i.fa-solid.fa-info {
     width: 24px;
+    height: 24px;
     border: 1px solid #D9D9D9 ;
+    border-radius: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.économique:hover {
-    background-color: #DEEBFF;
-}
-.familial:hover {
-    background-color: #DEEBFF;
-}
-.romantique:hover {
-    background-color: #DEEBFF;
-}
-.pepites:hover {
+.economique:hover, .familial:hover, .romantique:hover, .pepites:hover {
     background-color: #DEEBFF;
 }
 
