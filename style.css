@@ -93,7 +93,7 @@ li {
     align-items: flex-end;
 }
 
-li:hover {
+.navigation li:hover {
     color: #0065FC;
     border-top: solid #0065FC;
 }
@@ -339,6 +339,7 @@ i.fa-solid.fa-info {
 #Activites {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .container {
@@ -366,7 +367,28 @@ i.fa-solid.fa-info {
     border-radius: 20px;
 }
 
+/****** Footer ******/
 
+footer {
+    height: 163px;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+.a-propos, .nos-hebergements, .assistance {
+    width: 446px;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
