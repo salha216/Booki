@@ -79,7 +79,7 @@ ul.navigation {
     margin: 0;
 }
 
-li {
+.navigation li {
     height: 35px;
     display: flex;
     align-items: flex-end;
@@ -128,19 +128,6 @@ i.fa-solid.fa-location-dot {
     font-weight: 700;
 }
 
-.loupe {
-    width: 49px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    display: none;
-}
-
-i.fa-solid.fa-magnifying-glass {
-    color: #FFFFFF;
-}
-
 .search-bar {
     border: 1px solid #F2F2F2 ;
 }
@@ -150,6 +137,18 @@ i.fa-solid.fa-magnifying-glass {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
+}
+
+.loupe {
+    width: 49px;
+    border-radius: 15px;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    display: none;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    color: #FFFFFF;
 }
 
 .filtres {
@@ -207,7 +206,7 @@ i.fa-solid.fa-info {
     padding-bottom: 30px;
 }
 
-.carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
+.carte {
     width: 217px;
 }
 .cartes-hotels img {
@@ -329,8 +328,8 @@ footer {
     display: flex;
 }
 
-.a-propos, .nos-hebergements, .assistance {
-    width: 480px;
+.liens-footer {
+    width: 33%;
     padding: 20px;
 }
 
@@ -391,13 +390,30 @@ footer ul {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    body {
+        margin: 0;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
     }
 
+    ul.navigation {
+        width: 100%;
+        border-bottom: solid #F2F2F2;
+        gap: 0;
+        padding: 0;
+    }
+
     .navigation li {
         align-items: flex-start;
+        width: 50%;
+        justify-content: center;
     }
     
     .navigation li:hover {
@@ -405,8 +421,26 @@ footer ul {
         border-bottom:solid #0065FC;
     }
 
-    .boutton-envoyer {
+    section.recherches-et-filtres {
+        padding: 20px;
+    }
+    .search-bar {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    ::placeholder {
+        text-align: left;
+    }
+
+    .mot-rechercher {
         display: none;
+    }
+
+    .boutton-envoyer {
+        border-radius: 15px;
+        position: relative;
+        left: -20px;
     }
 
     .loupe {
@@ -433,6 +467,7 @@ footer ul {
 
     .hebergements-and-populaires section {
         border-radius: 0;
+        margin: 0;
     }
 
     .populaires-cards {
@@ -445,20 +480,22 @@ footer ul {
 
     #Hebergements {
         background-color: #FFFFFF;
-        padding-left: 0;
-        padding-right: 0
     }
 
     .card {
         width: 100%;
     }
 
-    .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
+    .carte {
         width: 100%;
     }
 
     .container {
         flex-direction: column;
+    }
+
+    #Activites{
+        padding: 20px;
     }
 
     .activite-marseille {
@@ -467,6 +504,12 @@ footer ul {
 
     footer {
         flex-direction: column;
+    }
+
+    .liens-footer {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
 }
