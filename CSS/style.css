@@ -58,6 +58,10 @@ a {
     color: var(--main-bg-color)
 }
 
+li {
+    list-style: none;
+}
+
 /****** Header ******/
 
 img.logo {
@@ -389,7 +393,6 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
     body {
         margin: 0;
     }
